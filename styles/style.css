@@ -1,0 +1,92 @@
+html {
+  font-size: 18px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
+  font-family: Times New Roman;
+  background-color: #333;
+  color: white;
+}
+
+body {
+  width: 0 auto;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  border: 0px solid black;
+}
+
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  text-shadow: 2px 3px 2px black;
+  text-align: center;
+  font-size: 40px;
+}
+
+ul {
+  padding-left: 5px;
+}
+
+ul, li {
+  margin-top: 20px;
+}
+
+.h2-inter.facts {
+  text-align: center;
+}
+
+.od-flag {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.div-main {
+  background-color: transparent;
+  /**margin-left: 10%;
+  margin-right: 10%;**/
+}
+
+@media (max-width: 2160px) {
+  .div-main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+}
+
+@media (max-width: 1200px) {
+  .div-main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+}
+@media (max-width: 768px) {
+  .div-main {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+}
+.fact-1, .fact-2, .fact-3, .fact-4 {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.button-1 {
+  height: 37px;
+  width: 100px;
+  font-size: 18px;
+  background-color: #2E8B57;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  
+}
+.button-1:active {
+  background-color: #228B22;
+}
+
+body:has(.button-1:active) .button-2 {
+  display: none;
+}
